@@ -8,6 +8,18 @@ public class EmailNotification  extends Notification{
     private String recipient;
     private String smtpProvider;
 
+    public String getRecipient() {
+        return recipient;
+    }
+
+    public String getSmtpProvider() {
+        return smtpProvider;
+    }
+
+    public void setstatus(String status) {
+        this.status = status;
+    }
+
     public EmailNotification(String subject, String body, String recipient, String smtpProvider) {
         super(subject, body);
         this.recipient = recipient;
@@ -16,11 +28,9 @@ public class EmailNotification  extends Notification{
 
 
 
-
-
     @Override
     public void transport() {
-        super.transport();
+        System.out.println(recipient+ smtpProvider + getSubject() + getBody());
     }
 }
 

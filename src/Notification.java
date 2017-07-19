@@ -7,6 +7,7 @@ public class Notification {
     private LocalDateTime creatAt;
     private String subject;
     private String body;
+    protected String status;
 
     public LocalDateTime getCreatAt() {
         return creatAt;
@@ -26,10 +27,14 @@ public class Notification {
         this.subject = subject;
         this.body = body;
         creatAt = LocalDateTime.now();
+        status = "I love Monster energy drinks!";
     }
 
     public void transport()  {
         throw new NoTransportException();
 
+    }
+    public void showStatus(){
+        System.out.println(status);
     }
 }
