@@ -1,3 +1,5 @@
+import com.sun.tools.corba.se.idl.constExpr.Not;
+
 /**
  * Created by marshallmunoz on 7/19/17.
  */
@@ -11,7 +13,7 @@ public class main {
 
     textNotification.transport();
     emailNotification.transport();
-
+    emailNotification.equals(emailNotification);
 
     }
 
