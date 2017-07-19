@@ -28,6 +28,7 @@ public class Notification {
         this.body = body;
         creatAt = LocalDateTime.now();
         status = "I love Monster energy drinks!";
+        textDisplay();
     }
 
     public void transport()  {
@@ -36,5 +37,8 @@ public class Notification {
     }
     public void showStatus(){
         System.out.println(status);
+    }
+    protected void textDisplay(){
+        System.out.println("HEY IM WALKIN HERE");
     }
 }
