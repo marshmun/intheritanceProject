@@ -28,7 +28,7 @@ public class Notification {
         creatAt = LocalDateTime.now();
     }
 
-    public static void transport()  {
+    public void transport()  {
         throw new NoTransportException();
 
     }
